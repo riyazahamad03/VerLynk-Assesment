@@ -42,6 +42,11 @@ exports.signup_user = async (req, res, next) => {
 };
 
 exports.login_user = async (req, res, next) => {
+  // {
+  //     "email" : "hellohello@gmail.com",
+  //     "password" : "xyz"
+  // }
+
   try {
     const user = await User.findOne({ email: req.body.email }).exec();
     if (!user) {

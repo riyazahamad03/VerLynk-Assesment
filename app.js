@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const userRoutes = require("./api/routes/blog_users");
+const blogRoutes = require("./api/routes/blog");
 const connectToDatabase = async () => {
   try {
     const mongoURI = process.env.MONGODB_URI;
@@ -27,6 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/user", userRoutes);
+app.use("/blog", blogRoutes);
 app.get("/", (req, res, next) => {
   res.status(200).json({ message: "Hello World" });
 });
