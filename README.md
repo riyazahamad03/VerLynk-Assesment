@@ -1,26 +1,29 @@
-Blog Application Backend Documentation
-Overview
+# Blog Application Backend Documentation
+
+## Overview
+
 This repository contains the backend logic for a Blog Application. Users can perform various operations, including:
 
-Login
-SignUp
-Create a blog
-Read a blog
-Update a blog
-Delete a blog
-Comment on a blog
-Delete a commented blog
-Read a blog
-
+- Login
+- SignUp
+- Create a blog
+- Read a blog
+- Update a blog
+- Delete a blog
+- Comment on a blog
+- Delete a commented blog
+- Read a blog
 
 Some routes are protected, requiring authentication.
 
+## Environment Variables (.env)
 
-Environment Variables (.env)
-Ensure you have a .env file with the following content:
+Ensure you have a `.env` file with the following content:
 
+```env
 SECRETKEY=your_secret_key
 MONGOURL=your_mongo_db_url
+```
 
 
 API Endpoints
