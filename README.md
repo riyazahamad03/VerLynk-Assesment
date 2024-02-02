@@ -27,14 +27,18 @@ MONGOURL=your_mongo_db_url
 
 
 API Endpoints
-1. Login
-Endpoint: /user/login
-Method: POST
-Request Body:   {
-      "email" : "hellohello@gmail.com",
-      "password" : "xyz"
-  } 
-Response: A JWT token for authentication.
+## Login
+
+- **Endpoint**: `/user/login`
+- **Method**: POST
+- **Request Body**:
+  ```json
+  {
+    "email": "hellohello@gmail.com",
+    "password": "xyz"
+  }
+  ```
+- Response: A JWT token for authentication.
 
 
 2. SignUp
